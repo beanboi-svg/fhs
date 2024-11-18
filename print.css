@@ -1,0 +1,20 @@
+@media print{
+	.print-exclude { display: none !important; }
+
+	body{
+		width: calc(100% - 1in);
+		overflow: visible;
+		margin: .5in !important;
+	}
+	.avoid-break-inside {
+		page-break-inside: avoid !important;
+	}
+	@page {
+		/* Dictate Special Page Settings Here */
+		size: 8.5in 11in;
+		margin: 0 !important;
+	}
+	footer{
+		display: none !important;
+	}
+}
